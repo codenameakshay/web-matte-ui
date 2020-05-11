@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:parallax_image/parallax_image.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 void main() {
   runApp(MyApp());
@@ -59,6 +59,76 @@ class _BackGroundState extends State<BackGround> {
                   child:
                       Image.asset("assets/images/AK.png", fit: BoxFit.fitWidth),
                 ),
+              ),
+              Column(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Padding(
+                        padding: const EdgeInsets.symmetric(
+                            vertical: 20.0, horizontal: 40),
+                        child: Text(
+                          'PROJECTS',
+                          style: TextStyle(fontFamily: "Agency", fontSize: 20),
+                        ),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.symmetric(
+                            vertical: 20.0, horizontal: 40),
+                        child: Text(
+                          'ABOUT',
+                          style: TextStyle(fontFamily: "Agency", fontSize: 20),
+                        ),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.symmetric(
+                            vertical: 20.0, horizontal: 40),
+                        child: Text(
+                          'CONTACT',
+                          style: TextStyle(fontFamily: "Agency", fontSize: 20),
+                        ),
+                      ),
+                    ],
+                  ),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Text(
+                        'AKSHAY',
+                        style: TextStyle(fontFamily: "Agency", fontSize: 120),
+                      )
+                    ],
+                  ),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Text(
+                        'AKSHAY MAURYA',
+                        style: TextStyle(fontFamily: "Agency", fontSize: 20),
+                      )
+                    ],
+                  ),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Text(
+                        'App Developer',
+                        style: GoogleFonts.homemadeApple(fontSize: 20),
+                      )
+                    ],
+                  ),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Text(
+                        '@codenameakshay',
+                        style: GoogleFonts.homemadeApple(fontSize: 20),
+                      )
+                    ],
+                  )
+                ],
               )
             ],
           ),
