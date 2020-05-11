@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:parallax_image/parallax_image.dart';
 
 void main() {
   runApp(MyApp());
@@ -40,29 +41,38 @@ class _BackGroundState extends State<BackGround> {
   final _controller = new ScrollController();
   @override
   Widget build(BuildContext context) {
-    return Stack(
-      children: [
-        Scrollbar(
-                  child: ListView(controller: _controller,
+    return Scrollbar(
+      child: ListView(
+        controller: _controller,
+        children: [
+          Stack(
             children: [
               Container(
-                child: Image.asset("assets/images/BG.jpg", fit: BoxFit.fitWidth),
+                child:
+                    Image.asset("assets/images/BG.jpg", fit: BoxFit.fitWidth),
 
                 /* add child content here */
               ),
-              // Positioned(
-              //   child: new ConstrainedBox(
-              //     constraints: new BoxConstraints(maxHeight: 2080),
-              //     child: new Image.asset(
-              //       'assets/images/BG.jpg',
-              //       fit: BoxFit.fitWidth,
-              //     ),
-              //   ),
-              // ),
+              Center(
+                child: Padding(
+                  padding: const EdgeInsets.fromLTRB(200.0, 130, 200, 0),
+                  child:
+                      Image.asset("assets/images/AK.png", fit: BoxFit.fitWidth),
+                ),
+              )
             ],
           ),
-        ),
-      ],
+          // Positioned(
+          //   child: new ConstrainedBox(
+          //     constraints: new BoxConstraints(maxHeight: 2080),
+          //     child: new Image.asset(
+          //       'assets/images/BG.jpg',
+          //       fit: BoxFit.fitWidth,
+          //     ),
+          //   ),
+          // ),
+        ],
+      ),
     );
   }
 }
