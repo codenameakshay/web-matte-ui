@@ -30,8 +30,6 @@ class _HomePageState extends State<HomePage> {
     return Scaffold(
       body: LayoutBuilder(
         builder: (context, constraints) {
-          print(constraints.maxHeight);
-          print(constraints.maxWidth);
           if (constraints.maxWidth > 1052) {
             return BackGround();
           }
@@ -189,7 +187,7 @@ class _BackGroundPhoneState extends State<BackGroundPhone> {
               ),
               Center(
                 child: Padding(
-                  padding: const EdgeInsets.fromLTRB(200.0, 130, 200, 0),
+                  padding: const EdgeInsets.fromLTRB(0.0, 330, 0, 0),
                   child:
                       Image.asset("assets/images/AK.png", fit: BoxFit.fitWidth),
                 ),
@@ -226,25 +224,15 @@ class _BackGroundPhoneState extends State<BackGroundPhone> {
                       ),
                     ],
                   ),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      Padding(
-                        padding: const EdgeInsets.fromLTRB(8, 520, 8, 8),
-                        child: Image.asset("assets/images/AKSHAY.png",
-                            fit: BoxFit.fitWidth),
-                      )
-                    ],
+                  Padding(
+                    padding: const EdgeInsets.fromLTRB(20, 120, 20, 8),
+                    child: Image.asset("assets/images/AKSHAY.png",
+                        fit: BoxFit.fitWidth),
                   ),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      Padding(
-                        padding: const EdgeInsets.fromLTRB(8, 160, 8, 8),
-                        child: Image.asset("assets/images/AKSHAY MAURYA.png",
-                            fit: BoxFit.fitWidth),
-                      )
-                    ],
+                  Padding(
+                    padding: const EdgeInsets.fromLTRB(150, 360, 150, 8),
+                    child: Image.asset("assets/images/AKSHAY MAURYA.png",
+                        fit: BoxFit.fitWidth),
                   ),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
@@ -260,7 +248,7 @@ class _BackGroundPhoneState extends State<BackGroundPhone> {
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Padding(
-                        padding: const EdgeInsets.fromLTRB(8, 210, 8, 8),
+                        padding: const EdgeInsets.fromLTRB(8, 40, 8, 8),
                         child: Text(
                           '@codenameakshay',
                           style: GoogleFonts.homemadeApple(
