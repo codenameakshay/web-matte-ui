@@ -61,7 +61,7 @@ class _BackGroundState extends State<BackGround> {
                 ),
               ),
               Column(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
@@ -95,18 +95,18 @@ class _BackGroundState extends State<BackGround> {
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      Text(
-                        'AKSHAY',
-                        style: TextStyle(fontFamily: "Agency", fontSize: 120),
+                      Padding(
+                        padding: const EdgeInsets.fromLTRB(8, 520, 8, 8),
+                        child: Image.asset("assets/images/AKSHAY.png"),
                       )
                     ],
                   ),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      Text(
-                        'AKSHAY MAURYA',
-                        style: TextStyle(fontFamily: "Agency", fontSize: 20),
+                      Padding(
+                        padding: const EdgeInsets.fromLTRB(8, 160, 8, 8),
+                        child: Image.asset("assets/images/AKSHAY MAURYA.png"),
                       )
                     ],
                   ),
@@ -115,16 +115,21 @@ class _BackGroundState extends State<BackGround> {
                     children: [
                       Text(
                         'App Developer',
-                        style: GoogleFonts.homemadeApple(fontSize: 20),
+                        style: GoogleFonts.homemadeApple(
+                            fontSize: 20, color: Colors.white),
                       )
                     ],
                   ),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      Text(
-                        '@codenameakshay',
-                        style: GoogleFonts.homemadeApple(fontSize: 20),
+                      Padding(
+                        padding: const EdgeInsets.fromLTRB(8, 210, 8, 8),
+                        child: Text(
+                          '@codenameakshay',
+                          style: GoogleFonts.homemadeApple(
+                              fontSize: 20, color: Colors.white),
+                        ),
                       )
                     ],
                   )
