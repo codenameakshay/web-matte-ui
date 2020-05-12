@@ -148,15 +148,6 @@ class _BackGroundState extends State<BackGround> {
               )
             ],
           ),
-          // Positioned(
-          //   child: new ConstrainedBox(
-          //     constraints: new BoxConstraints(maxHeight: 2080),
-          //     child: new Image.asset(
-          //       'assets/images/BG.jpg',
-          //       fit: BoxFit.fitWidth,
-          //     ),
-          //   ),
-          // ),
         ],
       ),
     );
@@ -261,15 +252,6 @@ class _BackGroundPhoneState extends State<BackGroundPhone> {
               )
             ],
           ),
-          // Positioned(
-          //   child: new ConstrainedBox(
-          //     constraints: new BoxConstraints(maxHeight: 2080),
-          //     child: new Image.asset(
-          //       'assets/images/BG.jpg',
-          //       fit: BoxFit.fitWidth,
-          //     ),
-          //   ),
-          // ),
         ],
       ),
     );
